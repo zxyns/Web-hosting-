@@ -1,14 +1,7 @@
 # ZXYN Hosting
 
-A futuristic responsive hosting landing page.
+Railway-ready Flask control panel starter with registration, login, multi-user hosting records, create-hosting form, status controls, and per-host file upload.
 
-## Railway
-This static site can be deployed on Railway using the included `Procfile`.
+Deploy from GitHub to Railway. Add a strong `SECRET_KEY` environment variable.
 
-1. Put these files in a GitHub repository.
-2. Railway → New Project → Deploy from GitHub Repo.
-3. Select the repository.
-4. Railway will run `python -m http.server $PORT`.
-5. Generate a public domain under Networking.
-
-The dashboard and plan buttons are UI only. Connect them to a backend/Pterodactyl API to create and manage real servers.
+IMPORTANT: this starter does not execute uploaded customer code or expose a Docker daemon. For real hosting, connect the control plane to a separately secured worker/node with sandboxing, resource limits, storage quotas, authentication and abuse controls.
